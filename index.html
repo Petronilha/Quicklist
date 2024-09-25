@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quicklist</title>
+  <link rel="stylesheet" href="styles/index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+      <header>
+        <img src="assets/logo.png" alt="">
+        <div class="title">
+          <strong>
+            <- Voltar
+          </strong>
+          <h1>Compras da semana</h1>
+        </div>
+      </header>
+
+      <main>
+          <form method="post">
+            <fieldset class="add-item">
+              <input type="text" id="input-new-item" name="item" placeholder="Adicione um novo item">
+              <button type="submit">
+                Adicionar item
+              </button>
+            </fieldset>
+
+            <fieldset class="itens">
+              
+
+            
+            </fieldset>
+
+            <fielset class="alert none">
+              <div class="notice">
+                  <div>
+                    <img src="assets/icons/warning.svg" alt="">
+                    <p>O item foi removido da lista</p>
+                  </div>
+                  <a href="#">
+                    <img src="assets/icons/delete.svg" alt="">
+                  </a>
+              </div>
+            </fielset>
+          </form>
+      </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 

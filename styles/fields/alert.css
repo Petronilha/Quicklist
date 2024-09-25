@@ -1,0 +1,30 @@
+.alert {
+  
+  & .notice {
+    width: 100%;
+    margin-top: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-danger);
+    border-radius: .75rem;    
+    
+    
+    & > div {
+      padding: 1.03125rem 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+
+      & p {
+        color: var(--always-white);
+    
+      }
+
+    }
+    & img {
+      padding-right: .75rem;
+    }
+  }
+
+}

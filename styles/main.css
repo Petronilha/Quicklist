@@ -1,0 +1,46 @@
+main {
+  max-width: 39.1875rem;
+  margin-inline: auto;
+}
+
+
+fieldset {
+
+  &.add-item {
+    margin-top: 2.75rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+
+  & #input-new-item {
+    padding: .6875rem 16.3125rem .6875rem 1.125rem;
+    border-radius: .75rem;
+    border: 2px solid transparent;
+    outline: 2px solid var(--border-primary);
+
+    &::placeholder {
+      color: var(--content-tertiary);
+    }
+  }
+
+  &:hover {
+    #input-new-item {
+      outline: 2px solid var(--border-hover);
+    }
+  }
+
+  &:focus-within #input-new-item {
+    outline: 2px solid var(--color-brand);
+
+    &::placeholder {
+      color: var(--content-primary);
+    }
+  }
+
+  & button {
+    border: none;
+  }
+}
+

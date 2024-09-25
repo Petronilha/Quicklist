@@ -1,0 +1,61 @@
+.itens {
+  & .list-itens {
+    width: 100%;
+    background-color: var(--background-secondary);
+    border-radius: .75rem;
+    position: relative;
+
+    .each-itens {
+      display: flex;
+      padding: .75rem 1.03125rem;
+    }
+
+    & label {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: .53125rem;
+
+    }
+
+    & [type="checkbox"] {
+      visibility: hidden;
+      position: absolute;
+      inset: 1;
+    }
+    & .checkbox-image {
+      flex: 0 0 1rem;
+      height: 1rem;
+
+      background-image: url(../../assets/icons/check-default.svg);
+      background-size: cover;
+    }
+
+    &:hover, &:focus-within {
+      .checkbox-image {
+        background-image: url(../../assets/icons/check-hover.svg);
+        background-size: cover;
+      }
+    }
+
+    &:has(:checked) .checkbox-image {
+      background-image: url(../../assets/icons/check-click.svg);
+    }
+
+    & img {
+      padding-right: .75rem;
+    }
+  }
+
+  & img {
+    color: #6B6671;
+  }
+}
+
+  & .list-itens {
+    margin-bottom: .75rem;
+  }
+
+  & .none {
+    display: none;
+  }
